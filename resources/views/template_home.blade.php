@@ -28,13 +28,9 @@
  <button type="submit" class="btn btn-default">Cari</button>
  </form>
  <ul class="nav navbar-nav navbar-right">
- <ul class="nav navbar-nav">
-   <li class="dropdown">
-     <a href="{{ route('logout') }}"  class="dropdown-toggle" data-toggle="dropdown"> {{ Auth::user()->name }} <span class="glyphicon glyphicon-user pull-right"></span></a>
-     <ul class="dropdown-menu">
-       <li class="divider"></li>
-       <li><a href="">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-     </ul>
+   <li><a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+</li>
+</ul>
 
    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
      @csrf
