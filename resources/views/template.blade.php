@@ -28,8 +28,8 @@
  <button type="submit" class="btn btn-default">Cari</button>
  </form>
  <ul class="nav navbar-nav navbar-right">
- <li><a href="{{ route('register') }}">Daftar</a></li>
-  <li><a href="{{ route('login') }}">Masuk</a></li>
+ <li><a href="{{ route('register') }}">Register</a></li>
+  <li><a href="{{ route('login') }}">Login</a></li>
  </ul>
  </li>
  </ul>
