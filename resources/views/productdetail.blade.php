@@ -22,7 +22,7 @@
               <P>{{ $data->deskripsi}}</P>
               <p>{{ $data->harga}}</P>
                 <button type="submit" class="btn btn-default">Tambah keranjang</button>
-               <a href="{{route('showbeli')}}"><button type="button" class="btn btn-default" ><i class="fa fa-plus"></i>Beli</button></a>
+               <a href="{{route('showbeli', [$data->id])}}"><button type="button" class="btn btn-default" ><i class="fa fa-plus"></i>Beli</button></a>
             </div>
            </div>
          </div>

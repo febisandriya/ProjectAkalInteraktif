@@ -37,10 +37,11 @@ class HomeController extends Controller
 
     }
 
-    public function beli()
+    public function beli($id)
     {
         $page ='beli';
-        return view ($page);
+        $data = Product::findOrFail($id);
+        return view($page)->with(compact('data'));
 
     }
 }
