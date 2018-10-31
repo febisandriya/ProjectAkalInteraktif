@@ -1,4 +1,4 @@
-@extends('template_home')
+@extends('template_order')
 @section('konten')
 <!doctype html>
 

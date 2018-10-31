@@ -17,7 +17,7 @@ protected $fillable = [
   'product_id',
   'qty',
   'total',
- // 'invoice',
+ 'invoice',
   'status',
 ];
   public function Product()  {

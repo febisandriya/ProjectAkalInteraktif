@@ -1,4 +1,4 @@
-@extends('template_home')
+@extends('template_order')
 
 @section('konten')
 <div class="container">

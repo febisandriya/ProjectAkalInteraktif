@@ -21,8 +21,8 @@ class OrderTable extends Migration
           $table->string('alamat');
           $table->integer('product_id')->unsigned();
           $table->integer('qty');
-          $table->integer('total');  
-         // $table->string('invoice');        
+          $table->integer('total');
+          $table->string('invoice');        
           $table->boolean('status');
           $table->timestamps();
 

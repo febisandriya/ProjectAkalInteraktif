@@ -14,7 +14,7 @@
 Route::get('/','ControllerView@index')->name('welcom');
 
 Route::get('productdetail/{id}', 'HomeController@productdetail')->name('productdetail');
-Route::get('detailproduct', 'ControllerView@detailproduct')->name('detailproduct');
+Route::get('detailproduct/{id}', 'ControllerView@detailproduct')->name('detailproduct');
 Route::get('beli/{id}', 'HomeController@beli')->name('showbeli');
 Route::post('order', 'OrderController@OrderAction')->name('order');
 Route::get('detail_order', 'OrderController@detailorder')->name('detailorder');

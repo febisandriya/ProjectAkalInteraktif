@@ -18,6 +18,7 @@ class OrderController extends Controller
       'product_id'   => 'required',
       $harga = 'harga'   => 'required',
       $qty = 'qty'   => 'required',
+      $invoice = 'ABCDEFGHIJKLMNOPQRSTUPWXYZ',
     ]);
       $total = $request->$harga*$request->$qty;
       $order = new Order();
@@ -28,6 +29,7 @@ class OrderController extends Controller
       $order->product_id = $request->get('product_id');
       $order->qty = $request->$qty;
       $order->total = $total;
+      $order->invoice = str_random(5);
       $order->status = false;
 
       if($order->save()){
